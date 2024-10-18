@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat WhatsApp Tanpa Simpan Nomor</title>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h2>APLIKASI UNTUK ORANG SI PALING PRIVASI</h2>
+    <img src="https://r1.community.samsung.com/t5/image/serverpage/image-id/2315297i0ABA7F7EA28577C9/image-size/large?v=v2&px=999" alt="GIF bergerak" width="200" height="200">
+    <h3>Chat Tanpa Save Nomer</h3>
+    <p>create by Andre</p>
+    
+    <label for="phone">Silahkan Masukkan Nomer Yang Mau Kamu chat Angka "0" Di ganti Dengan "62" Oke</label><br>
+    <input type="text" id="phone" placeholder="6281234567890"><br><br>
+
+    <button onclick="openWhatsApp()"
+        style="padding: 10px 20px; background-color: #25D366; color: white; border: none; border-radius: 5px;">
+        Chat via WhatsApp
+    </button>
+    <script>
+        function openWhatsApp() {
+            var phoneNumber = document.getElementById("phone").value;
+            var message = "Halo, saya ingin menanyakan sesuatu."; // Pesan default
+            if (phoneNumber) {
+                var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+                window.open(whatsappUrl, "_blank");
+            } else {
+                alert("Masukkan nomor telepon!");
+            }
+        }
+    </script>
+    </head>
+    <img src="https://i0.wp.com/dianisa.com/wp-content/uploads/2023/07/Stiker-Meme-Pentol-1.webp?resize=512%2C512&ssl=1" alt="GIF bergerak" width="100" height="100"><img src="https://i.pinimg.com/originals/9d/bb/29/9dbb2930af27f53ec52a17cd23f8d247.gif" alt="GIF bergerak" width="100" height="100">
+</body>
+
+</html>
